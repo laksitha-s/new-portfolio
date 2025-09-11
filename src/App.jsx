@@ -247,11 +247,11 @@ const App = () => {
         title: "ICEDREAMS",
         description:
           "Designed a visually appealing UI for an ice cream-selling platform, focusing on engaging layouts and smooth user interactions.",
-         github: "#",
+         github: "https://www.figma.com/proto/LBKGH8MrLn54rIgb5rxXhc/Untitled?page-id=0%3A1&node-id=1-136&viewport=80%2C99%2C0.26&t=0WLPrrKHL8HvlQgF-1&scaling=min-zoom&content-scaling=fixed",
         demo: "#",
         tags: ["Figma", "Canva", "UI Design", ],
         featured: true,
-        image: "src/assets/ice cream.png",
+        image: "/assets/ice cream.png",
       },
       {
         title: "KVR Plashtics",
@@ -260,7 +260,7 @@ const App = () => {
         github: "#",
         demo: "#",
         tags: ["Figma", "UX Design", ],
-        image: "src/assets/kvr.png",
+        image: "/assets/kvr.png",
       },
       {
         title: "QuickBite ",
@@ -269,7 +269,7 @@ const App = () => {
         github: "#",
         demo: "#",
         tags: ["Figma", "Canva", "UI Design", ],
-        image: "src/assets/quick bite.png",
+        image: "/assets/quick bite.png",
       },
       {
         title: "Mood-Based Movie Recommender",
@@ -278,7 +278,7 @@ const App = () => {
         github: "https://github.com/laksitha-s/Mood-Based-Movie-Recommender",
         demo: "https://mood-based-movie-recommender.streamlit.app/",
         tags: ["Python", "Pandas", "NumPy", "Machine Learning"],
-        image: "src/assets/movie.png",
+        image: "/assets/movie.png",
       },
       {
         title: "BookLyft ",
@@ -287,7 +287,7 @@ const App = () => {
         github: "https://github.com/laksitha-s/BOOK-RECOMMENDATION-WEBSITE---BOOKLYFT",
         demo: "",
         tags: ["Node.js", "Express", "MongoDB", "React"],
-        image: "src/assets/booklyt.png",
+        image: "/assets/booklyt.png",
       },
       {
         title: "Allure Homez",
@@ -296,7 +296,7 @@ const App = () => {
         github: "#",
         demo: "#",
         tags: ["Node.js", "Express", "MongoDB", "React"],
-        image: "src/assets/homes.png",
+        image: "/assets/homes.png",
       },
     ]
 
