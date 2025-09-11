@@ -19,6 +19,12 @@ import {
   ArrowRight,
   Star,
   Zap,
+   
+  
+  Palette,
+  Brush,
+  Layout,
+  Coffee,
 } from "lucide-react"
 
 const App = () => {
@@ -134,17 +140,16 @@ const App = () => {
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-[#FAFAFA] mb-8 leading-none tracking-tight">
             Hi, I'm{" "}
             <span className="relative inline-block text-[#FAFAFA] hover:text-[#D1D1D1] transition-colors duration-500 cursor-default">
-              Your Name
+              Laksitha
             </span>
           </h1>
 
           <p className="text-2xl sm:text-3xl lg:text-4xl text-[#FAFAFA] mb-6 font-light tracking-wide animate-fade-in-up delay-500">
-            Final Year <span className="font-semibold text-[#FAFAFA]">AIML Student</span>
+            Final Year <span className="font-semibold text-[#FAFAFA]">CSD Student</span>
           </p>
 
           <p className="text-lg sm:text-xl lg:text-2xl text-[#D1D1D1] mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up delay-700">
-            Passionate about artificial intelligence, machine learning, and creating innovative solutions that make a
-            difference in the world.
+             Passionate about UI/UX design, creative problem-solving, and building user-centered solutions that blend technology with design.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up delay-1000">
@@ -208,26 +213,21 @@ const App = () => {
 
         <div className="max-w-5xl mx-auto text-center space-y-12">
           <p className="text-2xl sm:text-3xl text-[#222222] font-light leading-relaxed tracking-wide">
-            I'm a passionate <span className="font-semibold text-[#222222]">Final Year AIML student</span> with a deep
-            interest in artificial intelligence, machine learning, and software development.
-          </p>
+  I'm a passionate <span className="font-semibold text-[#222222]">Final Year CSD student</span> with strong interests in <span className="font-medium text-[#222222]">software development</span> and <span className="font-medium text-[#222222]">UI/UX design</span>, solving problems creatively, and building human-centered digital experiences.
+</p>
 
-          <p className="text-xl sm:text-2xl text-[#222222]/80 leading-relaxed max-w-4xl mx-auto">
-            My journey in technology has been driven by <span className="font-medium text-[#222222]">curiosity</span>{" "}
-            and the desire to solve real-world problems through innovative solutions.
-          </p>
+<p className="text-xl sm:text-2xl text-[#222222]/80 leading-relaxed max-w-4xl mx-auto">
+  My journey in technology and design is driven by <span className="font-medium text-[#222222]">curiosity</span> and the desire to craft solutions that combine functionality, performance, and aesthetics.
+</p>
 
-          <p className="text-xl sm:text-2xl text-[#222222]/80 leading-relaxed max-w-4xl mx-auto">
-            Throughout my academic journey, I've worked on various projects ranging from{" "}
-            <span className="font-medium text-[#222222]">web development</span> to{" "}
-            <span className="font-medium text-[#222222]">machine learning applications</span>.
-          </p>
+<p className="text-xl sm:text-2xl text-[#222222]/80 leading-relaxed max-w-4xl mx-auto">
+  Throughout my academic journey, I've worked on projects ranging from <span className="font-medium text-[#222222]">efficient web applications and backend systems</span> to <span className="font-medium text-[#222222]">intuitive UI/UX designs</span>, integrating technical skills with design thinking.
+</p>
 
-          <p className="text-xl sm:text-2xl text-[#222222]/80 leading-relaxed max-w-4xl mx-auto">
-            When I'm not coding, you can find me exploring the latest trends in AI, contributing to{" "}
-            <span className="font-medium text-[#222222]">open-source projects</span>, or sharing knowledge with the
-            developer community.
-          </p>
+<p className="text-xl sm:text-2xl text-[#222222]/80 leading-relaxed max-w-4xl mx-auto">
+  When I'm not coding or designing, you can find me exploring <span className="font-medium text-[#222222]">emerging technologies</span>, experimenting with <span className="font-medium text-[#222222]">creative interfaces</span>, or sharing insights with the tech and design community.
+</p>
+
 
           <div className="pt-8">
             <div className="inline-flex items-center space-x-4 px-8 py-4 bg-[#222222]/5 rounded-full border border-[#222222]/10 hover:border-[#222222]/30 transition-all duration-700 transform hover:scale-110 hover:-translate-y-6 shadow-xl hover:shadow-2xl overflow-hidden cursor-pointer">
@@ -244,59 +244,59 @@ const App = () => {
   const ProjectsSection = () => {
     const projects = [
       {
-        title: "AI-Powered Web Application",
+        title: "ICEDREAMS",
         description:
-          "A full-stack web application that leverages machine learning algorithms to provide intelligent recommendations and data analysis.",
-        github: "#",
+          "Designed a visually appealing UI for an ice cream-selling platform, focusing on engaging layouts and smooth user interactions.",
+         github: "#",
         demo: "#",
-        tags: ["React", "Python", "TensorFlow", "Node.js"],
+        tags: ["Figma", "Canva", "UI Design", ],
         featured: true,
-        image: "src/assets/a1.jpg",
+        image: "src/assets/ice cream.png",
       },
       {
-        title: "Machine Learning Model",
+        title: "KVR Plashtics",
         description:
-          "Developed and trained a deep learning model for image classification with 95% accuracy using TensorFlow and Python.",
+          "Developed an intuitive UX design for a hanger-selling app, optimizing user flow, navigation, and accessibility for a seamless shopping experience.",
         github: "#",
         demo: "#",
-        tags: ["Python", "TensorFlow", "OpenCV", "Jupyter"],
-        image: "/ml-neural-network-visualization.png",
+        tags: ["Figma", "UX Design", ],
+        image: "src/assets/kvr.png",
       },
       {
-        title: "React Dashboard",
+        title: "QuickBite ",
         description:
-          "A responsive dashboard built with React and Tailwind CSS featuring real-time data visualization and user management.",
+          "Created a responsive and modern UI for a quick-order food application, combining vibrant visuals with functional design to enhance user engagement.",
         github: "#",
         demo: "#",
-        tags: ["React", "Tailwind", "Chart.js", "Firebase"],
-        image: "/modern-react-dashboard-with-analytics.jpg",
+        tags: ["Figma", "Canva", "UI Design", ],
+        image: "src/assets/quick bite.png",
       },
       {
-        title: "Data Analysis Tool",
+        title: "Mood-Based Movie Recommender",
         description:
-          "Python-based tool for data preprocessing, analysis, and visualization using pandas, numpy, and matplotlib.",
-        github: "#",
-        demo: "#",
-        tags: ["Python", "Pandas", "NumPy", "Matplotlib"],
-        image: "/data-analysis-charts-and-statistics.jpg",
+          "Built a machine learning model that provides personalized movie recommendations based on user preferences and viewing history.",
+        github: "https://github.com/laksitha-s/Mood-Based-Movie-Recommender",
+        demo: "https://mood-based-movie-recommender.streamlit.app/",
+        tags: ["Python", "Pandas", "NumPy", "Machine Learning"],
+        image: "src/assets/movie.png",
       },
       {
-        title: "Mobile App Prototype",
+        title: "BookLyft ",
         description:
-          "Cross-platform mobile application prototype built with React Native for task management and productivity.",
-        github: "#",
-        demo: "#",
-        tags: ["React Native", "Expo", "Redux", "AsyncStorage"],
-        image: "/mobile-app-interface.png",
+          "Developed a MERN stack application that recommends books based on user mood and reading habits, featuring personalized dashboards and interactive tracking.",
+        github: "https://github.com/laksitha-s/BOOK-RECOMMENDATION-WEBSITE---BOOKLYFT",
+        demo: "",
+        tags: ["Node.js", "Express", "MongoDB", "React"],
+        image: "src/assets/booklyt.png",
       },
       {
-        title: "API Development",
+        title: "Allure Homez",
         description:
-          "RESTful API built with Node.js and Express, featuring authentication, data validation, and comprehensive documentation.",
+          "Built a MERN stack portfolio application for a textile company to showcase materials and projects, emphasizing clean UI/UX and seamless navigation.",
         github: "#",
         demo: "#",
-        tags: ["Node.js", "Express", "MongoDB", "JWT"],
-        image: "/api-documentation-interface.jpg",
+        tags: ["Node.js", "Express", "MongoDB", "React"],
+        image: "src/assets/homes.png",
       },
     ]
 
@@ -408,23 +408,24 @@ const App = () => {
 
   const TechStackSection = () => {
     const technologies = [
-      { name: "React", icon: <Code className="w-12 h-12" />, color: "from-blue-400 to-blue-600" },
-      { name: "Python", icon: <Server className="w-12 h-12" />, color: "from-yellow-400 to-yellow-600" },
-      { name: "TensorFlow", icon: <Brain className="w-12 h-12" />, color: "from-orange-400 to-orange-600" },
-      { name: "JavaScript", icon: <Globe className="w-12 h-12" />, color: "from-yellow-300 to-yellow-500" },
-      { name: "Node.js", icon: <Server className="w-12 h-12" />, color: "from-green-400 to-green-600" },
-      { name: "MongoDB", icon: <Database className="w-12 h-12" />, color: "from-green-500 to-green-700" },
-      { name: "Tailwind CSS", icon: <Code className="w-12 h-12" />, color: "from-cyan-400 to-cyan-600" },
-      { name: "React Native", icon: <Smartphone className="w-12 h-12" />, color: "from-blue-500 to-purple-600" },
-    ]
+  { name: "Figma", icon: <Palette className="w-12 h-12" />, color: "from-pink-400 to-purple-600" },
+  { name: "Adobe Illustrator", icon: <Brush className="w-12 h-12" />, color: "from-orange-400 to-red-600" },
+  { name: "Framer", icon: <Layout className="w-12 h-12" />, color: "from-blue-400 to-indigo-600" },
+  { name: "React", icon: <Code className="w-12 h-12" />, color: "from-blue-400 to-blue-600" },
+  { name: "Python", icon: <Server className="w-12 h-12" />, color: "from-yellow-400 to-yellow-600" },
+  { name: "Java", icon: <Coffee className="w-12 h-12" />, color: "from-red-500 to-orange-600" },
+  { name: "Node.js", icon: <Server className="w-12 h-12" />, color: "from-green-400 to-green-600" },
+  { name: "MongoDB", icon: <Database className="w-12 h-12" />, color: "from-green-500 to-green-700" },
+]
+
 
     return (
       <section id="tech-stack" className="relative py-32 bg-[#FAFAFA] overflow-hidden">
         <div className="absolute top-0 left-0 w-full overflow-hidden">
           <svg className="relative block w-full h-32" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15,6,69.85,17.84,104.45,29.34C989.49,95,1113,134.29,1200,67.53V0Z"
-              fill="#FAFAFA"
+              d="M0,0V60c100,40,200,40,300,20c100,-20,200,-20,300,0c100,20,200,20,300,0c100,-20,200,-20,300,20V0Z"
+              fill="#222222"
             ></path>
           </svg>
         </div>
@@ -512,14 +513,14 @@ const App = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             {[
-              { icon: Mail, title: "Email", info: "your.email@example.com", color: "from-red-400 to-red-600" },
+              { icon: Mail, title: "Email", info: "laksitha2704@gmail.com", color: "from-red-400 to-red-600" },
               {
                 icon: Linkedin,
                 title: "LinkedIn",
-                info: "linkedin.com/in/yourprofile",
+                info: "linkedin.com/in/laksitha-s-450572259",
                 color: "from-blue-400 to-blue-600",
               },
-              { icon: Github, title: "GitHub", info: "github.com/yourusername", color: "from-gray-400 to-gray-600" },
+              { icon: Github, title: "GitHub", info: "github.com/laksitha-s", color: "from-gray-400 to-gray-600" },
             ].map((contact, index) => (
               <div
                 key={index}
@@ -593,24 +594,27 @@ const App = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <p className="text-[#929292] text-lg">
-              © 2024 <span className="text-[#FAFAFA] font-semibold">Your Name</span>. All rights reserved.
+              © 2024 <span className="text-[#FAFAFA] font-semibold">Laksitha</span>. All rights reserved.
             </p>
           </div>
           <div className="flex space-x-8">
-            {[
-              { icon: Github, href: "#", color: "hover:text-gray-400" },
-              { icon: Linkedin, href: "#", color: "hover:text-blue-400" },
-              { icon: Twitter, href: "#", color: "hover:text-blue-400" },
-            ].map((social, index) => (
-              <a
-                key={index}
-                href={social.href}
-                className={`text-[#929292] ${social.color} transition-all duration-300 transform hover:scale-125 hover:-translate-y-1`}
-              >
-                <social.icon className="w-7 h-7" />
-              </a>
-            ))}
-          </div>
+  {[
+    { icon: Github, href: "https://github.com/laksitha-s", color: "hover:text-gray-400" },
+    { icon: Linkedin, href: "https://linkedin.com/in/laksitha-s-450572259", color: "hover:text-blue-400" },
+    // { icon: Twitter, href: "#", color: "hover:text-blue-400" },
+  ].map((social, index) => (
+    <a
+      key={index}
+      href={social.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`text-[#929292] ${social.color} transition-all duration-300 transform hover:scale-125 hover:-translate-y-1`}
+    >
+      <social.icon className="w-7 h-7" />
+    </a>
+  ))}
+</div>
+
         </div>
       </div>
     </footer>
