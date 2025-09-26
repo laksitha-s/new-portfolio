@@ -247,8 +247,8 @@ const App = () => {
         title: "ICEDREAMS",
         description:
           "Designed a visually appealing UI for an ice cream-selling platform, focusing on engaging layouts and smooth user interactions.",
-         github: "https://www.figma.com/proto/LBKGH8MrLn54rIgb5rxXhc/Untitled?page-id=0%3A1&node-id=1-136&viewport=80%2C99%2C0.26&t=0WLPrrKHL8HvlQgF-1&scaling=min-zoom&content-scaling=fixed ",
-        demo: "#",
+         github: "https://github.com/laksitha-s/ICEDREAMS",
+        demo: "https://www.figma.com/proto/LBKGH8MrLn54rIgb5rxXhc/Untitled?page-id=0%3A1&node-id=1-136&viewport=80%2C99%2C0.26&t=0WLPrrKHL8HvlQgF-1&scaling=min-zoom&content-scaling=fixed ",
         tags: ["Figma", "Canva", "UI Design", ],
         featured: true,
         image: "/assets/ice cream.png",
@@ -257,8 +257,8 @@ const App = () => {
         title: "KVR Plashtics",
         description:
           "Developed an intuitive UX design for a hanger-selling app, optimizing user flow, navigation, and accessibility for a seamless shopping experience.",
-        github: "https://www.figma.com/proto/17jpfbUjLmdyEFmznlzLGs/new-ui-icecream?page-id=0%3A1&node-id=1-2&viewport=345%2C254%2C0.13&t=DaNSJbwe5mdbeirD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A86",
-        demo: "#",
+        github: "https://github.com/laksitha-s/KVR-Plashtics",
+        demo: "https://www.figma.com/proto/17jpfbUjLmdyEFmznlzLGs/new-ui-icecream?page-id=0%3A1&node-id=1-2&viewport=345%2C254%2C0.13&t=DaNSJbwe5mdbeirD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A86",
         tags: ["Figma", "UX Design", ],
         image: "/assets/kvr.png",
       },
@@ -266,8 +266,8 @@ const App = () => {
         title: "QuickBite ",
         description:
           "Created a responsive and modern UI for a quick-order food application, combining vibrant visuals with functional design to enhance user engagement.",
-        github: "https://www.figma.com/proto/RuOUbpVdvkkQiu30YE7WgT/food-delivery-app?page-id=0%3A1&node-id=1-292&p=f&viewport=90%2C230%2C0.24&t=L0awWxqsGJ0rnrYZ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A448",
-        demo: "#",
+        github: "https://github.com/laksitha-s/QuickBite",
+        demo: "https://www.figma.com/proto/RuOUbpVdvkkQiu30YE7WgT/food-delivery-app?page-id=0%3A1&node-id=1-292&p=f&viewport=90%2C230%2C0.24&t=L0awWxqsGJ0rnrYZ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A448",
         tags: ["Figma", "Canva", "UI Design", ],
         image: "/assets/quick bite.png",
       },
@@ -594,7 +594,7 @@ const App = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <p className="text-[#929292] text-lg">
-              © 2024 <span className="text-[#FAFAFA] font-semibold">Laksitha</span>. All rights reserved.
+              © 2025 <span className="text-[#FAFAFA] font-semibold">Laksitha</span>. All rights reserved.
             </p>
           </div>
           <div className="flex space-x-8">
