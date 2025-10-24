@@ -1,5 +1,6 @@
 "use client"
-
+ import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { useState, useEffect } from "react"
 import {
   Menu,
@@ -247,8 +248,8 @@ const App = () => {
         title: "ICEDREAMS",
         description:
           "Designed a visually appealing UI for an ice cream-selling platform, focusing on engaging layouts and smooth user interactions.",
-         github: "https://github.com/laksitha-s/ICEDREAMS",
-        demo: "https://www.figma.com/proto/LBKGH8MrLn54rIgb5rxXhc/Untitled?page-id=0%3A1&node-id=1-136&viewport=80%2C99%2C0.26&t=0WLPrrKHL8HvlQgF-1&scaling=min-zoom&content-scaling=fixed ",
+         github: "https://www.figma.com/proto/LBKGH8MrLn54rIgb5rxXhc/Untitled?page-id=0%3A1&node-id=1-136&viewport=80%2C99%2C0.26&t=0WLPrrKHL8HvlQgF-1&scaling=min-zoom&content-scaling=fixed ",
+        demo: "#",
         tags: ["Figma", "Canva", "UI Design", ],
         featured: true,
         image: "/assets/ice cream.png",
@@ -257,8 +258,8 @@ const App = () => {
         title: "KVR Plashtics",
         description:
           "Developed an intuitive UX design for a hanger-selling app, optimizing user flow, navigation, and accessibility for a seamless shopping experience.",
-        github: "https://github.com/laksitha-s/KVR-Plashtics",
-        demo: "https://www.figma.com/proto/17jpfbUjLmdyEFmznlzLGs/new-ui-icecream?page-id=0%3A1&node-id=1-2&viewport=345%2C254%2C0.13&t=DaNSJbwe5mdbeirD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A86",
+        github: "https://www.figma.com/proto/17jpfbUjLmdyEFmznlzLGs/new-ui-icecream?page-id=0%3A1&node-id=1-2&viewport=345%2C254%2C0.13&t=DaNSJbwe5mdbeirD-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A86",
+        demo: "#",
         tags: ["Figma", "UX Design", ],
         image: "/assets/kvr.png",
       },
@@ -266,8 +267,8 @@ const App = () => {
         title: "QuickBite ",
         description:
           "Created a responsive and modern UI for a quick-order food application, combining vibrant visuals with functional design to enhance user engagement.",
-        github: "https://github.com/laksitha-s/QuickBite",
-        demo: "https://www.figma.com/proto/RuOUbpVdvkkQiu30YE7WgT/food-delivery-app?page-id=0%3A1&node-id=1-292&p=f&viewport=90%2C230%2C0.24&t=L0awWxqsGJ0rnrYZ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A448",
+        github: "https://www.figma.com/proto/RuOUbpVdvkkQiu30YE7WgT/food-delivery-app?page-id=0%3A1&node-id=1-292&p=f&viewport=90%2C230%2C0.24&t=L0awWxqsGJ0rnrYZ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A448",
+        demo: "#",
         tags: ["Figma", "Canva", "UI Design", ],
         image: "/assets/quick bite.png",
       },
@@ -479,8 +480,36 @@ const App = () => {
     )
   }
 
-  const ContactSection = () => (
+ 
+
+const ContactSection = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9riwjsh", // replace with your EmailJS service ID
+        "template_6ao08ra", // replace with your EmailJS template ID
+        form.current,
+        "-OH1YMMhVfCIoILTu" // replace with your EmailJS public key
+      )
+      .then(
+        () => {
+          alert("✅ Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          console.error("Error sending email:", error);
+          alert("❌ Failed to send message. Please try again.");
+        }
+      );
+  };
+
+  return (
     <section id="contact" className="py-32 bg-[#222222] relative overflow-hidden">
+      {/* Top wave divider */}
       <div className="absolute top-0 left-0 w-full overflow-hidden">
         <svg className="relative block w-full h-32" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
@@ -491,6 +520,7 @@ const App = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-block mb-6">
             <span className="px-6 py-2 bg-[#FAFAFA]/10 text-[#FAFAFA] text-sm font-semibold rounded-full border border-[#FAFAFA]/20">
@@ -498,7 +528,7 @@ const App = () => {
             </span>
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#FAFAFA] mb-6 tracking-tight">
-            Let's
+            Let's{" "}
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FAFAFA] to-[#D1D1D1]">
               Connect
             </span>
@@ -509,8 +539,9 @@ const App = () => {
           </p>
         </div>
 
+        {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Contact Info */}
+          {/* Contact Info Cards */}
           <div className="space-y-8">
             {[
               { icon: Mail, title: "Email", info: "laksithaa2704@gmail.com", color: "from-red-400 to-red-600" },
@@ -543,14 +574,16 @@ const App = () => {
             ))}
           </div>
 
-          {/* Contact Form */}
+          {/* Contact Form with EmailJS */}
           <div className="bg-gradient-to-br from-[#FAFAFA]/10 to-[#929292]/5 backdrop-blur-sm rounded-3xl p-10 border border-[#929292]/20 hover:border-[#FAFAFA]/30 transition-all duration-500 shadow-2xl">
-            <form className="space-y-8">
+            <form ref={form} onSubmit={sendEmail} className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="group">
                   <label className="block text-[#FAFAFA] font-semibold mb-3 text-lg">Name</label>
                   <input
                     type="text"
+                    name="user_name"
+                    required
                     className="w-full px-6 py-4 bg-[#222222]/50 border-2 border-[#929292]/30 rounded-2xl text-[#FAFAFA] placeholder-[#929292] focus:border-[#FAFAFA] focus:outline-none transition-all duration-300 backdrop-blur-sm hover:border-[#D1D1D1]/50"
                     placeholder="Your Name"
                   />
@@ -559,6 +592,8 @@ const App = () => {
                   <label className="block text-[#FAFAFA] font-semibold mb-3 text-lg">Email</label>
                   <input
                     type="email"
+                    name="user_email"
+                    required
                     className="w-full px-6 py-4 bg-[#222222]/50 border-2 border-[#929292]/30 rounded-2xl text-[#FAFAFA] placeholder-[#929292] focus:border-[#FAFAFA] focus:outline-none transition-all duration-300 backdrop-blur-sm hover:border-[#D1D1D1]/50"
                     placeholder="your.email@example.com"
                   />
@@ -568,6 +603,8 @@ const App = () => {
                 <label className="block text-[#FAFAFA] font-semibold mb-3 text-lg">Message</label>
                 <textarea
                   rows={6}
+                  name="message"
+                  required
                   className="w-full px-6 py-4 bg-[#222222]/50 border-2 border-[#929292]/30 rounded-2xl text-[#FAFAFA] placeholder-[#929292] focus:border-[#FAFAFA] focus:outline-none transition-all duration-300 resize-none backdrop-blur-sm hover:border-[#D1D1D1]/50"
                   placeholder="Tell me about your project or just say hello..."
                 ></textarea>
@@ -586,7 +623,10 @@ const App = () => {
         </div>
       </div>
     </section>
-  )
+  );
+};
+
+
 
   const Footer = () => (
     <footer className="bg-[#222222] border-t border-[#929292]/20 py-16">
@@ -594,7 +634,7 @@ const App = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <p className="text-[#929292] text-lg">
-              © 2025 <span className="text-[#FAFAFA] font-semibold">Laksitha</span>. All rights reserved.
+              © 2024 <span className="text-[#FAFAFA] font-semibold">Laksitha</span>. All rights reserved.
             </p>
           </div>
           <div className="flex space-x-8">
