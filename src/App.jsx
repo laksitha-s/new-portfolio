@@ -267,7 +267,7 @@ const App = () => {
         title: "QuickBite ",
         description:
           "Created a responsive and modern UI for a quick-order food application, combining vibrant visuals with functional design to enhance user engagement.",
-        github: "https://www.figma.com/proto/RuOUbpVdvkkQiu30YE7WgT/food-delivery-app?page-id=0%3A1&node-id=1-292&p=f&viewport=90%2C230%2C0.24&t=L0awWxqsGJ0rnrYZ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A448",
+        github: "#",
         demo: "https://www.figma.com/proto/RuOUbpVdvkkQiu30YE7WgT/food-delivery-app?page-id=0%3A1&node-id=1-448&starting-point-node-id=1%3A448&t=KgifhAeUnWrpwSqR-1",
         tags: ["Figma", "Canva", "UI Design", ],
         image: "/assets/quick bite.png",
