@@ -255,6 +255,15 @@ const App = () => {
         image: "/assets/ice cream.png",
       },
       {
+        title: "Virtual Vogue",
+        description:
+          "Virtual Vogue is a modern, user-centric e-commerce UI project designed to enhance the online dress-shopping experience through Augmented Reality (AR) try-on technology.",
+        github: "#",
+        demo: "https://www.figma.com/proto/13vQr6tWANGYwL4sVYam2K/ar-ty-on-wireframe?page-id=0%3A1&node-id=160-1359&viewport=-1418%2C1149%2C0.21&t=bfNDHByeGnerbcIz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=56%3A139&show-proto-sidebar=1",
+        tags: ["Figma", ,"UI","Design"],
+        image: "/assets/virtualVogue.jpg",
+      },
+      {
         title: "KVR Plashtics",
         description:
           "Developed an intuitive UX design for a hanger-selling app, optimizing user flow, navigation, and accessibility for a seamless shopping experience.",
@@ -272,15 +281,7 @@ const App = () => {
         tags: ["Figma", "Canva", "UI Design", ],
         image: "/assets/quick bite.png",
       },
-     {
-        title: "Virtual Vogue",
-        description:
-          "Virtual Vogue is a modern, user-centric e-commerce UI project designed to enhance the online dress-shopping experience through Augmented Reality (AR) try-on technology.",
-        github: "#",
-        demo: "https://www.figma.com/proto/13vQr6tWANGYwL4sVYam2K/ar-ty-on-wireframe?page-id=0%3A1&node-id=160-1359&viewport=-1418%2C1149%2C0.21&t=bfNDHByeGnerbcIz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=56%3A139&show-proto-sidebar=1",
-        tags: ["Figma", ,"UI","Design"],
-        image: "/assets/virtualVogue.jpg",
-      },
+    
       {
         title: "Mood-Based Movie Recommender",
         description:
