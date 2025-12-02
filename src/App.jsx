@@ -268,7 +268,7 @@ const App = () => {
         description:
           "Created a responsive and modern UI for a quick-order food application, combining vibrant visuals with functional design to enhance user engagement.",
         github: "https://www.figma.com/proto/RuOUbpVdvkkQiu30YE7WgT/food-delivery-app?page-id=0%3A1&node-id=1-292&p=f&viewport=90%2C230%2C0.24&t=L0awWxqsGJ0rnrYZ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A448",
-        demo: "#",
+        demo: "https://www.figma.com/proto/RuOUbpVdvkkQiu30YE7WgT/food-delivery-app?page-id=0%3A1&node-id=1-448&starting-point-node-id=1%3A448&t=KgifhAeUnWrpwSqR-1",
         tags: ["Figma", "Canva", "UI Design", ],
         image: "/assets/quick bite.png",
       },
@@ -291,12 +291,12 @@ const App = () => {
         image: "/assets/booklyt.png",
       },
       {
-        title: "Allure Homez",
+        title: "Virtual Vogue",
         description:
-          "Built a MERN stack portfolio application for a textile company to showcase materials and projects, emphasizing clean UI/UX and seamless navigation.",
+          "Virtual Vogue is a modern, user-centric e-commerce UI project designed to enhance the online dress-shopping experience through Augmented Reality (AR) try-on technology.",
         github: "#",
-        demo: "#",
-        tags: ["Node.js", "Express", "MongoDB", "React"],
+        demo: "https://www.figma.com/proto/13vQr6tWANGYwL4sVYam2K/ar-ty-on-wireframe?page-id=0%3A1&node-id=160-1359&viewport=-1418%2C1149%2C0.21&t=bfNDHByeGnerbcIz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=56%3A139&show-proto-sidebar=1",
+        tags: ["Figma", ,"UI","Design"],
         image: "/assets/homes.png",
       },
     ]
