@@ -261,7 +261,7 @@ const App = () => {
         github: "#",
         demo: "https://www.figma.com/proto/13vQr6tWANGYwL4sVYam2K/ar-ty-on-wireframe?page-id=0%3A1&node-id=160-1359&viewport=-1418%2C1149%2C0.21&t=bfNDHByeGnerbcIz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=56%3A139&show-proto-sidebar=1",
         tags: ["Figma", ,"UI","Design"],
-        image: "/assets/virtualVogue.jpg",
+        image: "/assets/virtualVogue.png",
       },
       {
         title: "KVR Plashtics",
